@@ -1,0 +1,58 @@
+/* Initialize */
+body { margin: 0; }
+a { text-decoration: none; color: inherit; }
+ul, li { list-style-type: none; padding: 0; margin: 0; }
+h1,h2,h3,h4,h5,h6 { font-weight: normal; font-size: 16px; margin: 0; }
+p { margin: 0; }
+input, button { outline: none; padding: 0; box-sizing: border-box; }
+/* Common Frame */
+.header,
+.welcome,
+.find,
+.about,
+.history,
+.statics,
+.subscribe,
+.testimonial,
+.footer-con { display: flex; justify-content: center; align-items: center; }
+
+.header-con,
+.welcome-con,
+.find-con,
+.about-con,
+.history-con,
+.statics-con,
+.subscribe-con,
+.testimonial-con,
+.footer-con { width: 1100px; }
+
+/* Header */
+header { height: 100%; }
+/* Welcome */
+.welcome { height: 100vh; }
+/* Find */
+.find { height: 800px; }
+/* About */
+.about { height: 1300px; }
+/* History */
+.history { height: 1000px; }
+/* Statics */
+.statics { height: 240px; }
+/* Subscribe */
+.subscribe { height: 1000px; }
+/* Testimonial */
+.testimonial { height: 600px; }
+/* Footer */
+footer { height: 600px; }
+/* Border */
+header,
+section { border: 1px solid black; }
+.header-con,
+.welcome-con,
+.find-con,
+.about-con,
+.history-con,
+.statics-con,
+.subscribe-con,
+.testimonial-con,
+.footer-con { border: 1px solid black; }
