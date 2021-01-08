@@ -8,14 +8,13 @@ p { margin: 0; }
 input, button { outline: none; padding: 0; box-sizing: border-box; }
 
 /* Common Frame */
-.welcome,
 .find,
 .about,
 .history,
 .statics,
 .subscribe,
 .testimonials,
-.footer-con { display: flex; justify-content: center; align-items: center; }
+footer { display: flex; justify-content: center; align-items: center; }
 
 .find-con,
 .about-con,
@@ -48,8 +47,9 @@ nav > a:hover { color: #70b65b; }
 nav > a:last-child { padding: 18px 25px; color: #333; background-color: #fff;  box-sizing: border-box; }
 
 /* Welcome */
-.welcome { position: relative; height: calc(100vh - 100px); margin: 100px 0 0; }
-.welcome-con { width: 100%; height: 100%; }
+.welcome { position: relative; width: 100%; height: calc(100vh - 100px); margin: 100px 0 0; }
+.welcome-con { width: 300%; height: 100%; transition: .3s; }
+.welcome-slide { float: left;  width: 33.333%; height: 100%; border: 1px solid red; }
 .welcome-prev,
 .welcome-next {
   position: absolute;
@@ -81,7 +81,6 @@ footer { height: 600px; }
 header,
 section { border: 1px solid black; }
 .header-con,
-.welcome-con,
 .find-con,
 .about-con,
 .history-con,
@@ -89,3 +88,5 @@ section { border: 1px solid black; }
 .subscribe-con,
 .testimonial-con,
 .footer-con { border: 1px solid black; }
+
+.welcome-con { border: 2px solid red;}
