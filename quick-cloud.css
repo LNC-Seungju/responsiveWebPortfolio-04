@@ -201,8 +201,10 @@ nav > a:last-child:hover:before { width: 0; height: 0;}
 .about-desc a span { position: relative; color: #fff; transition: .3s; }
 .about-desc a:hover:before { width: 0; height: 0; }
 .about-desc a:hover span { color: #1f1f1f; }
-.about-img { padding: 15px; box-sizing: border-box; }
+.about-img { padding: 15px; box-sizing: border-box; transform: translateY(100px); opacity: 0; visibility: hidden; transition: 2s; }
+.about-img.reveal { transform: translateY(0); opacity: 1; visibility: visible; }
 .about-img img { width: 100%; }
+
 
 /* History */
 .history { height: 1000px; padding: 70px 0; box-sizing: border-box; }

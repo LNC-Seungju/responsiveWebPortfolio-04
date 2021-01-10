@@ -62,6 +62,25 @@ welcomeNext[0].addEventListener('click', () => {
 })
 welcomeMove(1)
 
+// About Img Reveal
+const aboutImg = document.getElementsByClassName('about-img');
+console.log(aboutImg);
+window.addEventListener('scroll', ()=> {
+  if( scrollY > 1200 ) {
+    aboutImg[0].classList.add('reveal');
+  }
+  else {
+    aboutImg[0].classList.remove('reveal');
+  }
+  if( scrollY > 1800) {
+    aboutImg[1].classList.add('reveal');
+  }
+  else {
+    aboutImg[1].classList.remove('reveal');
+  }
+  console.log(scrollY)
+})
+
 // History Slide 
 const historySlide = document.getElementsByClassName('history-slide');
 const historySlideItem = document.getElementsByClassName('history-slide-item')
