@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="quick-cloud.css">
+  <link rel="stylesheet" href="quick-cloud-responsive.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
-  <!-- https://demo.themewagon.com/preview/free-bootstrap-4-html5-agency-website-template-quickloud -->
   <title>QuickCloud</title>
 </head>
 <body>
-  
+  <!-- Header -->
   <header>
+    <div class="header-trigger">
+      <span></span>
+      <span></span> 
+      <span></span>
+    </div>
     <div class="header-con">
       <a href="#none"><img src="./images/logo.png" alt="logo"></a>
       <nav>
@@ -21,10 +26,11 @@
         <a href="#none">Domain</a>        
         <a href="#none">Pricing</a>        
         <a href="#none">Contact</a>        
-        <a href="#none"><span>Customer Login</span></a>        
+        <a href="#none" class="login-open"><span>Customer Login</span></a>        
       </nav>
     </div>
   </header>
+<!-- Welcome -->
   <section class="welcome">
     <a href="#none" class="welcome-prev"><i class="fas fa-angle-left"></i></a>
     <a href="#none" class="welcome-next"><i class="fas fa-angle-right"></i></a>
@@ -67,6 +73,7 @@
         </div>
     </div>
   </section>
+<!-- Find -->
   <section class="find">
     <div class="find-con">
       <div class="find-search">
@@ -94,6 +101,7 @@
       </div>
     </div>
   </section>
+<!-- About -->
   <section class="about">
     <div class="about-con">
       <div class="about-title">
@@ -137,6 +145,7 @@
       </div>
     </div>
   </section>
+<!-- History -->
   <section class="history">
     <div class="history-con">
       <div class="history-title">
@@ -235,6 +244,7 @@
       </div>
     </div>
   </section>
+<!-- Statics -->
   <section class="statics">
     <div class="statics-con">
       <div class="statics-card">
@@ -260,6 +270,7 @@
       </div>
     </div>
   </section>
+<!-- Subscribe -->
   <section class="subscribe">
     <div class="subscribe-con">
       <div class="subscribe-title">
@@ -377,6 +388,7 @@
       </div>
     </div>
   </section>
+<!-- Footer -->
   <footer>
     <div class="footer-top">
       <div class="footer-about">
@@ -389,7 +401,7 @@
         </p>
       </div>
       <ul>
-        <span>Information </span>
+        <span>Information Link</span>
         <li><a href="#none">Home</a></li>
         <li><a href="#none">Blog</a></li>
         <li><a href="#none">Pricing</a></li>
@@ -418,7 +430,45 @@
       </div>
     </div>
   </footer> 
-  <div class="login-modal"></div>
+  <div class="modal-overlay">
+    <div class="login-modal">
+      <div class="login-header">
+        <h1>Customer Login</h1>
+        <div class="login-close">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="login-tabs">
+        <span class="login-tab enabled">Login</span>
+        <span class="login-tab disabled">Registration</span>
+      </div>
+      <div class="login-forms">
+        <form class="login-form login-form-login">
+          <input type="text" placeholder="Name">
+          <input type="text" placeholder="Email">
+          <div class="extra">
+            <button type="submit">Submit</button>
+            <a href="#none">Forget your password?</a>
+          </div>
+        </form>
+        <form class="login-form login-form-register">
+          <input type="text" placeholder="Name">
+          <input type="text" placeholder="Email">
+          <input type="text" placeholder="Mobile">
+          <input type="password" placeholder="Password">
+          <div class="extra">
+            <button type="submit">Submit</button>
+            <a href="#none">Forget your password?</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+    
+  <!-- Button - Shift To Top -->
+  <a href="#" class="shift-to-top"><i class="fas fa-angle-up"></i></a>
+
   <script src="./quick-cloud.js"></script>
 </body>
 </html>

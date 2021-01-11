@@ -1,0 +1,114 @@
+@media ( max-width : 480px ) {
+  .find-con,
+.about-con, 
+.statics-con,
+.subscribe-con { width: 100%; }
+
+  /* Header */
+  header { position: absolute; z-index: 2; padding: 0; }
+  .header-trigger { display: block; }
+  .header-con { flex-direction: column; }
+  .header-con > a { width: 100%; height: 100%; padding: 20px; box-sizing: border-box; }
+  nav { display: flex; flex-direction: column; width: 100%; max-height: 0; background-color: #333; transition: 0.5s; opacity: 0; visibility: hidden; }
+  nav > a { 
+    width: 100%;
+    margin: 0; 
+    padding: 10px 35px;  
+    box-sizing: border-box;
+  }
+  nav.show { max-height: 2000px; opacity: 1; visibility: visible; }
+  nav > a:last-child { width: 170px; height: 60px; margin: 0 15px 15px; padding: 0 10px; line-height: 60px; text-align: center; }
+
+
+  /* Welcome */
+  .welcome { height: 400px; }
+  .welcome-desc { width: 80%; }
+  .welcome-desc h1 { font-size: 28px; }
+  .welcome-desc h1 span { margin: 0 10px;  }
+  .welcome-desc p { font-size: 14px; }
+  .welcome-desc > div a {
+    width: 100px; 
+    height: 40px; 
+    margin: 0 5px;
+    font-size: 12px; line-height: 40px;
+  }
+  .welcome-prev,
+  .welcome-next { top: calc(100% - 50px); }
+  .welcome-prev { left: calc(50% - 50px); }
+  .welcome-next { right: calc(50% - 50px); }
+
+  /* Find */
+  .find { height: auto; padding: 50px 0; }
+  .find-search-input { height: 60px; box-sizing: border-box; }
+  .find-search-input input { width: calc(100% - 60px); }
+  .find-search-input button { width: 60px; }
+  .find-search-detail label { padding: 15px 0; margin: 0 5px; }
+  .find-search-detail label input { margin: 0 10px; }
+  .find-desc h1 { font-size: 34px; }
+
+  /* About */
+  .about-title { width: 100%; padding: 0 20px; box-sizing: border-box; }
+  .about-title h1 { font-size: 28px; }
+  .about-card { flex-direction: column; margin: 0 0 10px;  }
+  .about-card > div { width: 100%; }
+  .about-desc h1 { font-size: 24px; }
+  .about-desc p { font-size: 15px; line-height: 1.8em; }
+  .about-desc a { width: 130px; font-size: 16px; }
+
+  /* History */
+  .history { height: auto; }
+  .history-con { width: 100%; }
+  .history-control-wrap { height: auto; }
+  .history-title { width: 100%; padding: 0 25px; box-sizing: border-box; }
+  .history-title h1 { font-size: 28px; }
+
+  .history-slide { flex-direction: column; width: 100%; }
+  .history-slide-con { width: 100%; overflow: visible; }
+  .history-slide-prev { display: none; }
+  .history-slide-next { display: none; }
+  .history-slide-item { width: 100%; }
+  .slide-dot { display: flex; justify-content: flex-end; padding: 10px 0; }
+  .slide-dot:before { left: 20px; transform: translate(0, -50%)}
+  .slide-dot:after { width: 5px; height: 100%; left: 20px;  transform: translateX(5px); }
+  .history-slide-content { 
+    position: static;
+    width: 80%;
+    padding: 20px;
+    transform: translateX(0); 
+  }
+  .history-slide-item:nth-child(odd) .slide-dot .history-slide-content:before,
+  .history-slide-item:nth-child(even) .slide-dot .history-slide-content:before { left: -7.5px; }
+  .history-slide-item:nth-child(odd) .slide-dot .history-slide-content:before { 
+    top: 50%; 
+    transform: translateY(-50%) rotate(135deg);
+  }
+  .history-slide-item:nth-child(even) .slide-dot .history-slide-content:before {
+    bottom: 50%;
+    transform: translateY(50%) rotate(-135deg);
+  }
+  
+  /* Statics */
+  .statics { height: auto; padding: 50px 0; }
+  .statics-con { flex-direction: column; height: 300px; }
+  .statics-card { width: 100%; }
+  .statics-card > div { width: 150px; }
+  
+  /* Subscribe */
+  .subscribe-con { overflow: hidden; }
+  .subscribe-title h1 { font-size: 28px; }
+  .subscribe-title p { line-height: 1.8em; padding: 0 15px; }
+  .subscribe-tabs { width: 90%; margin: 0 auto; }
+
+  .subscribe-card-con { height: auto; }
+  .subscribe-duration { flex-direction: column; }
+  .subscribe-card { width: 80%; height: auto; padding: 0 0 20px; margin: 0 auto 30px; }
+  .subscribe-card > h1 { padding: 20px 0; }
+  .subscribe-card > ul { padding: 20px 30px; }
+
+  /* Footer */
+  footer { height: auto; padding: 50px 0;  }
+  .footer-top { flex-direction: column; width: 100%;  }
+  .footer-top > div,
+  .footer-top > ul { width: 100%; box-sizing: border-box; }
+  .footer-bottom-con { width: 100%; height: 120px;  flex-direction: column; align-items: center; }
+} 

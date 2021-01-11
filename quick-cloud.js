@@ -8,6 +8,15 @@ window.addEventListener('scroll', () => {
     header[0].classList.remove('fixed');
 })
 
+// Header Trigger 
+const headerTrigger = document.getElementsByClassName('header-trigger');
+const nav = document.getElementsByTagName('nav');
+
+headerTrigger[0].addEventListener('click', ()=> {
+  headerTrigger[0].classList.toggle('active');
+  nav[0].classList.toggle('show');
+})
+
 // Welcome Slide
 const welcomeCon = document.getElementsByClassName('welcome-con');
 const welcomeSlide = document.getElementsByClassName('welcome-slide');
@@ -133,5 +142,45 @@ for(let i = 0; i < subscribeTabs.length; i++) {
     shiftSubscribeCon(i);
   })
 }
+
+// Login Modal 
+const loginOpen = document.getElementsByClassName('login-open');
+const loginClose = document.getElementsByClassName('login-close');
+const loginTab = document.getElementsByClassName('login-tab');
+const loginForm = document.getElementsByClassName('login-form');
+const modalOverlay = document.getElementsByClassName('modal-overlay');
+
+// Open & Close Login Modal
+loginOpen[0].addEventListener('click', () => {
+  modalOverlay[0].classList.add('active');
+})
+loginClose[0].addEventListener('click', () => {
+  modalOverlay[0].classList.remove('active');
+})
+
+for( let i = 0; i < loginTab.length; i++ ) {
+  loginTab[i].addEventListener('click', () => {
+    for( let j = 0; j < loginTab.length; j++) {
+      loginTab[j].classList.add('disabled');
+      loginTab[j].classList.remove('enabled');
+      loginForm[j].classList.add('disabled');
+      loginForm[j].classList.remove('enabled');
+    }
+    loginForm[i].classList.remove('disabled');
+    loginTab[i].classList.add('enabled');
+    loginForm[i].classList.add('enabled');
+  })
+}
+
+// Shift to Top 
+const shiftToTop = document.getElementsByClassName('shift-to-top');
+window.addEventListener('scroll', () => {
+  if(scrollY > 200) {
+    shiftToTop[0].classList.add('reveal');
+  }
+  else { 
+    shiftToTop[0].classList.remove('reveal');
+  }
+})
 
 
